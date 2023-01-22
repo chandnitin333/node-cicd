@@ -1,0 +1,25 @@
+{
+  "name": "icad",
+  "version": "1.0.0",
+  "description": "icad application for mobile app api's",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chandnitin333/icad.git"
+  },
+  "keywords": [
+    "icad"
+  ],
+  "author": "Nitin S. Chandekar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chandnitin333/icad/issues"
+  },
+  "homepage": "https://github.com/chandnitin333/icad#readme",
+  "dependencies": {
+    "typescript": "^4.9.4"
+  }
+}
