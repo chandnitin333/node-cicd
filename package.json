@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "test",
-    "start": "nodemon --exec ts-node src/app.ts"
+    "dev": "nodemon --exec ts-node src/app.ts",
+    "start":"node dist/app.js",
+    "tsc": "tsc",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
