@@ -2,7 +2,7 @@
 
 FROM node:16.17
 
-WORKDIR /app
+# WORKDIR /app
 
 COPY package*.json ./
 
@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm install 
 
-RUN npm run build
+# RUN npm run build
 
 EXPOSE 3000
 
