@@ -37,6 +37,10 @@ let port = 3000;
   
 //   }
 
+  server.get("/", (req, res) => {
+      res.send("Node is Running...");
+  });
+  
   server.listen(port,()=>{
     console.log(`Server Listen port :`,port);
     console.log(`Worker PID ${process.pid} started`);
