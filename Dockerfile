@@ -2,7 +2,7 @@
 
 FROM node:16.17
 
-WORKDIR /app
+# WORKDIR /app
 
 COPY package*.json ./
 
