@@ -1,6 +1,6 @@
 
 
-FROM node:16.17-alpine
+FROM node:16.17-alpine as base
 
 WORKDIR /app
 
@@ -8,7 +8,7 @@ COPY package*.json ./
 
 COPY . .
 
-RUN npm install 
+RUN npm install --production=false
 
 
 
