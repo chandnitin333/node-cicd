@@ -43,6 +43,11 @@ let port = 3000;
       res.send("Node is Running...");
   });
   
+  server.get("/home", (req, res) => {
+    res.send("Wel come to home");
+});
+
+
   server.listen(port,()=>{
     console.log(`Server Listen port :`,port);
     console.log(`Worker PID ${process.pid} started`);
