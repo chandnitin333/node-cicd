@@ -1,26 +1,41 @@
 # icad
 # CICD application
+   create node image from docker with specifix version
+   
+      FROM node:16.17-alpine as base  
 
-   FROM node:16.17-alpine as base  
+      WORKDIR /app
 
-   WORKDIR /app
+      COPY package*.json ./
 
-   COPY package*.json ./
-
-   COPY . .
-
-
-   RUN npm install --production=false
+      COPY . .
 
 
-
-   EXPOSE 3000
-
-   CMD ["npm","run","dev"]
+      RUN npm install --production=false
 
 
 
+      EXPOSE 3000
 
+      CMD ["npm","run","dev"]   # application run command 
+
+
+#  DockerComposer
+   Use for build you docker file
+   
+         version: '3.3'     // verson 
+      services:
+        web:
+          build: .        // run your docker file
+          ports:
+            - "3000:3000"  // expose port run your application
+     
+     docker-composer up   # setup  your application inside docekr 
+
+#  Workflow
+      github workflow write in .githubwork
+
+# also added self hosted runner
 
 
 
