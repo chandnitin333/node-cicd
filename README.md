@@ -1,5 +1,26 @@
 # icad
-icad application
+# CICD application
+
+   FROM node:16.17-alpine as base  
+
+   WORKDIR /app
+
+   COPY package*.json ./
+
+   COPY . .
+
+
+   RUN npm install --production=false
+
+
+
+   EXPOSE 3000
+
+   CMD ["npm","run","dev"]
+
+
+
+
 
 
 
