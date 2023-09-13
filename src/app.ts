@@ -5,7 +5,7 @@ const { spawn } = require('child_process');
 const child = spawn('pwd');
 
 let server =  new Server().app;
-let port = 3000;
+let port = 80;
 
 // test
 
